@@ -1,9 +1,12 @@
-// let userSeconds = prompt("Set Seconds (Or Don't?)");
-// let time = parseInt(userSeconds) * 1000;
-let time = 3000;
+let userSeconds = prompt("Set Seconds");
+let time = parseInt(userSeconds) * 1000;
+let userAudio = prompt("Audio");
+let userSwitch = prompt("Switch Audio");
+let enterSwitch = false;
+// let time = 3000;
 
-// let userFilter = prompt("Filter?");
-let userFilter = "";
+let userFilter = prompt("Set Filter");
+// let userFilter = "";
 
 if (userFilter === "yellow") {
 	document.getElementById("filter").style.backgroundColor = "#b57500";
@@ -79,6 +82,7 @@ setInterval( () => {
 	if (userFilter === "random") { filterSwitch() };
 	// rotateSwitch();
 	imageSwitch();
+	if (userSwitch && enterSwitch) { document.getElementById('switchAudio').play(); }
 }, time);
 
 setInterval( () => { 
@@ -109,10 +113,14 @@ setInterval( () => {
 
 window.onkeyup = function(e) {
 	var key = e.keyCode ? e.keyCode : e.which;
-	document.getElementById('audio').play();
+	if (userAudio) { document.getElementById('audio').play(); };
+	enterSwitch = true;
 	if (key == 13) {
        var elem = document.getElementById("body");
 	   req = elem.requestFullScreen || elem.webkitRequestFullScreen || elem.mozRequestFullScreen;
 	   req.call(elem);	
+   }
+	if (key == 81) {
+       location.reload(); 
    }
 };
