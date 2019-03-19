@@ -28,7 +28,7 @@ body {
     opacity: 1;
     transition: 0s;
     position: absolute;
-    filter:invert(100%)
+    filter:invert(100%);
 }
 
 #image2 {

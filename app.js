@@ -36,6 +36,18 @@ const filterSwitch = () => {
 		};
 };
 
+// const rotateSwitch = () => {
+// 	// randomNum = (Math.round(Math.random() * 360) - 180);
+// 	// document.getElementById("body").style.transform = "rotate(" + randomNum + "deg)";
+
+// 	// randomNum = (Math.round(Math.random() * 360) - 180);
+// 	// document.getElementById("image").style.transform = "rotate(" + randomNum + "deg)";
+// 	// randomNum = (Math.round(Math.random() * 360) - 180);
+// 	// document.getElementById("image2").style.transform = "rotate(" + randomNum + "deg)";
+// 	// randomNum = (Math.round(Math.random() * 360) - 180);
+// 	// document.getElementById("image3").style.transform = "rotate(" + randomNum + "deg)";
+// }
+
 imageSwitch();
 if (userFilter === "random") { filterSwitch() };
 let randomNum2 = (Math.round(Math.random() * 25) + 150);
@@ -53,6 +65,7 @@ document.getElementById("image3").style.width = randomNum2 + "%";
 document.getElementById("image3").style.width = randomNum2 + "%";
 document.getElementById("image3").style.marginTop = randomNum3 + "%";
 document.getElementById("image3").style.marginLeft = randomNum3 + "%";
+// rotateSwitch();
 
 setInterval( () => { 
 	let randomNum2 = (Math.round(Math.random() * 25) + 150);
@@ -64,6 +77,7 @@ setInterval( () => {
 	document.getElementById("image").style.marginTop = randomNum3 + "%";
 	document.getElementById("image").style.marginLeft = randomNum3 + "%";
 	if (userFilter === "random") { filterSwitch() };
+	// rotateSwitch();
 	imageSwitch();
 }, time);
 
