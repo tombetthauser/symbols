@@ -1,12 +1,14 @@
-let userSeconds = prompt("Set Seconds");
-let time = parseInt(userSeconds) * 1000;
-let userAudio = prompt("Audio");
-let userSwitch = prompt("Switch Audio");
-let enterSwitch = false;
-// let time = 3000;
+// let userSeconds = prompt("Set Seconds");
+// let time = parseInt(userSeconds) * 1000;
+// let userAudio = prompt("Audio");
+// let userSwitch = prompt("Switch Audio");
+// let enterSwitch = false;
+let userAudio = true;
+let userSwitch = false;
+let time = 3000;
 
-let userFilter = prompt("Set Filter");
-// let userFilter = "";
+// let userFilter = prompt("Set Filter");
+let userFilter = "";
 
 if (userFilter === "yellow") {
 	document.getElementById("filter").style.backgroundColor = "#b57500";
