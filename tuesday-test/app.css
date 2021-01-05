@@ -51,6 +51,7 @@ body {
   border: 1px inset #ddd;
   margin: 7.5px;
   height: 340px;
+  font-family: monospace;
 }
 
 @keyframes shake {
