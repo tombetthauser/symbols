@@ -1,0 +1,68 @@
+body {
+  background-image: url("./images/forest.jpg");
+}
+
+.main-div {
+  width: 750px;
+  height: 500px;
+  background-color: #bbb;
+  margin: auto;
+  margin-top: 75px;
+  border: 7.5px outset #ccc;
+  box-shadow: 17.5px 20px 0px rgba(0,0,0,0.4);
+  padding: 5px;
+  animation: shake 0.2s;
+  animation-iteration-count: infinite;
+}
+
+.inner-side-div {
+  border: 12.5px outset #ccc;
+  height: 475px;
+  width: 20%;
+  display: inline-block;
+}
+
+.inner-center-div {
+  border: 12.5px outset #ccc;
+  height: 475px;
+  width: 48.5%;
+  display: inline-block;
+}
+
+.innerinner-sidetop-div{
+  border: 1px inset #ddd;
+  margin: 7.5px;
+  height: 100px;
+}
+
+.inner-inner-sidebottom-div{
+  border: 1px inset #ddd;
+  margin: 7.5px;
+  height: 340px;
+}
+
+.innerinner-centertop-div{
+  border: 1px inset #ddd;
+  margin: 7.5px;
+  height: 100px;
+}
+
+.inner-inner-centerbottom-div{
+  border: 1px inset #ddd;
+  margin: 7.5px;
+  height: 340px;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px); }
+  10% { transform: translate(-1px, -1px); }
+  20% { transform: translate(-1px, 0px); }
+  30% { transform: translate(1px, 1px); }
+  40% { transform: translate(1px, -1px); }
+  50% { transform: translate(-1px, 1px); }
+  60% { transform: translate(-1px, 1px); }
+  70% { transform: translate(1px, 1px); }
+  80% { transform: translate(-1px, -1px); }
+  90% { transform: translate(1px, 1px); }
+  100% { transform: translate(1px, -1px); }
+}
