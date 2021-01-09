@@ -1,0 +1,45 @@
+body {
+  background-image: url("./images/water.jpg");
+  animation: drift-diag4 2s linear infinite;
+  /* transition: .2s; */
+}
+
+@keyframes drift-up {
+  0% {background-position: top 0px left 0px;}
+  100% {background-position: top 418px left 0px;}
+}
+
+@keyframes drift-down {
+  0% {background-position: bottom 0px left 0px;}
+  100% {background-position: bottom -418px left 0px;}
+}
+
+@keyframes drift-right {
+  0% {background-position: top 0px left 0px;}
+  100% {background-position: top 0px left 418px;}
+}
+
+@keyframes drift-left {
+  0% {background-position: top 0px right 0px;}
+  100% {background-position: top 0px right 418px;}
+}
+
+@keyframes drift-diag1 {
+  0% {background-position: top 0px right 0px;}
+  100% {background-position: top -418px right 418px;}
+}
+
+@keyframes drift-diag2 {
+  0% {background-position: top 0px right 0px;}
+  100% {background-position: top 418px right 418px;}
+}
+
+@keyframes drift-diag3 {
+  0% {background-position: top 0px right 0px;}
+  100% {background-position: top 418px right -418px;}
+}
+
+@keyframes drift-diag4 {
+  0% {background-position: top 0px right 0px;}
+  100% {background-position: top -418px right -418px;}
+}
