@@ -1,0 +1,51 @@
+body {
+  color: rgba(0,0,0,0);
+  /* color: #fff; */
+  background-image: url("./images/cave.png");
+  background-size: 1000px;
+  font-size: 2em;
+  font-weight: 50;
+  text-shadow: 50px 50px 0 rgba(255, 255, 255, .3);
+  animation: scroll 90s linear infinite;
+  transition: .5s;
+  background-position-y: 562px;
+  overflow: hidden;
+}
+
+#form {
+  width: 75px;
+  height: 75px;
+  background-image: url("./images/form.jpg");
+  background-size: cover;
+  border: 8px outset #eee;
+  /* filter: invert(1); */
+  border-radius: 20% 0 20% 0;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  filter: brightness(80%) saturate(1) invert(0);
+  box-shadow: 3.5px 3.5px 10px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+#other-div {
+  height: 1000px;
+  width: 35%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: .1vw;
+  color: #999;
+  padding-left: -5%;
+  border-right: 5vw solid #000;
+  text-shadow: none;
+  overflow: hidden;
+  box-shadow: 10px 0px 5px rgba(0, 0, 0, 0.5);
+  /* z-index: -1; */
+}
+
+@keyframes scroll {
+  0% {background-position-y: 0px; background-position-x: 0px;}
+  100% {background-position-y: 562px; background-position-x: 1000px;}
+}
