@@ -1,6 +1,7 @@
 const directories = [
 './ca-rock-garden/index.html',
 './cave-01/index.html',
+'./pig-party/index.html',
 './tuesday-test/index.html',
 './water-burger/index.html',
 ];

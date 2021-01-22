@@ -1,0 +1,24 @@
+body {
+  background-image: url("images/cave.webp");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+#main {
+  width: 500px;
+  display: block;
+  margin: auto;
+  height: 100vh;
+  transition: 10s;
+  color: white;
+  font-family: 'Comic Sans', 'Courier New', Courier, monospace;
+}
+
+img {
+  width: 300px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  box-shadow: -15px 15px 15px rgba(0,0,0,0.8);
+}
