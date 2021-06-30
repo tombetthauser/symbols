@@ -7,21 +7,14 @@
   <link rel="stylesheet" href="app.css">
 </head>
 <script>
-  var isPlaying = false;
-  var myAudio = null;
+  let ears;
+  let inner;
 
-  function togglePlay() {
-    myAudio = document.getElementById("asfawe");
-    isPlaying ? myAudio.pause() : myAudio.play();
-    isPlaying = !isPlaying;
+  const togglePlay = () => {
+    inner = document.getElementById("tacotwelvepack");
+    ears ? inner.pause() : inner.play();
+    ears = !ears;
   };
-
-  // myAudio.onplaying = function () {
-  //   isPlaying = true;
-  // };
-  // myAudio.onpause = function () {
-  //   isPlaying = false;
-  // };
 </script>
 <body>
   <whocares id="main-thing">
@@ -31,7 +24,7 @@
 
 
 
-  <audio id="asfawe" src="rain.mp3" loop></audio>
+  <audio id="tacotwelvepack" src="rain.mp3" loop></audio>
   <div id="ok" onclick="togglePlay()">&gt;</div>
 
   </whocares>
