@@ -6,6 +6,23 @@
   <title>***//👁👃👁//***</title>
   <link rel="stylesheet" href="app.css">
 </head>
+<script>
+  var isPlaying = false;
+  var myAudio = null;
+
+  function togglePlay() {
+    myAudio = document.getElementById("asfawe");
+    isPlaying ? myAudio.pause() : myAudio.play();
+    isPlaying = !isPlaying;
+  };
+
+  // myAudio.onplaying = function () {
+  //   isPlaying = true;
+  // };
+  // myAudio.onpause = function () {
+  //   isPlaying = false;
+  // };
+</script>
 <body>
   <whocares id="main-thing">
    <!-- <audio controls autoplay loop>
@@ -15,7 +32,7 @@
 
 
   <audio id="asfawe" src="rain.mp3" loop></audio>
-  <div id="ok" onclick="document.getElementById('asfawe').play()">&gt;</div>
+  <div id="ok" onclick="togglePlay()">&gt;</div>
 
   </whocares>
 </body>
