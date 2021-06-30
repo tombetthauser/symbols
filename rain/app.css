@@ -1,4 +1,5 @@
 body {
+  background-color: black;
   background-image: url("./images/water.jpg");
   animation: drift-diag-4 20s linear infinite;
 }
